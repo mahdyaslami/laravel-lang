@@ -13,5 +13,5 @@ $ composer require mahdiaslami/laravel-fa-lang
 and: 
 
 ```
-$ php artisan vendor:publish mahdiaslami-lang-fa
+$ php artisan vendor:publish --tag mahdiaslami-lang-fa
 ```
