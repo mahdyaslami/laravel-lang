@@ -1,0 +1,25 @@
+{
+    "name": "mahdiaslami/laravel-fa-lang",
+    "description": "Persian translations for Laravel lang directory.",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Mahdiaslami\\LaravelFaLang\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Mahdi Aslami Khavari",
+            "email": "mahdyaslami@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mahdiaslami\\LaravelFaLang\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
