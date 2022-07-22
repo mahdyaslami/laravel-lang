@@ -15,6 +15,6 @@ class ServiceProvider extends SupportServiceProvider
     {
         $this->publishes([
             __DIR__.'/../lang' => $this->app->langPath('fa'),
-        ]);
+        ], 'mahdiaslami-lang-fa');
     }
 }
