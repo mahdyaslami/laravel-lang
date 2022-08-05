@@ -43,7 +43,7 @@ return [
     'digits_between' => ':attribute باید بین :min و :max رقم باشد.',
     'dimensions' => 'dimensions مربوط به فیلد :attribute اشتباه است.',
     'distinct' => ':attribute مقدار تکراری دارد.',
-    'doesnt_start_with' => 'The :attribute may not start with one of the following: :values.',
+    'doesnt_start_with' => ':attribute نباید با موارد روبرو شروع شود: :values.',
     'email' => 'فرمت :attribute معتبر نیست.',
     'ends_with' => ':attribute باید با این مقدار تمام شود: :values.',
     'enum' => ':attribute انتخاب شده نا معتبر است',
