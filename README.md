@@ -7,7 +7,7 @@ Persian translation for default translations file in Laravel lang directory.
 Run following command in your Laravel directory:
 
 ```
-$ composer require mahdiaslami/laravel-fa-lang
+$ composer require mahdiaslami/laravel-lang
 ```
 
 and: 

@@ -1,10 +1,10 @@
 {
-    "name": "mahdiaslami/laravel-fa-lang",
+    "name": "mahdiaslami/laravel-lang",
     "description": "Persian translations for Laravel lang directory.",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Mahdiaslami\\LaravelFaLang\\": "src/"
+            "Mahdiaslami\\Laravel\\Lang\\": "src/"
         }
     },
     "authors": [
@@ -16,7 +16,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mahdiaslami\\LaravelFaLang\\ServiceProvider"
+                "Mahdiaslami\\Laravel\\Lang\\ServiceProvider"
             ]
         }
     },

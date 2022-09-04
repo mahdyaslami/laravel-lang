@@ -1,6 +1,6 @@
 <?php
 
-namespace MahdiAslami\LaravelFaLang;
+namespace MahdiAslami\Laravel\Lang;
 
 use Illuminate\Support\ServiceProvider as SupportServiceProvider;
 
