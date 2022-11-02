@@ -9,7 +9,6 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Console\\": "console/",
             "Tests\\": "tests/"
         }
     },

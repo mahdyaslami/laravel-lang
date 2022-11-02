@@ -1,6 +1,6 @@
 <?php
 
-namespace Console;
+namespace MahdiAslami\Laravel\Lang\Console;
 
 class LibreTranslate
 {
