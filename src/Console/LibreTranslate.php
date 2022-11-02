@@ -2,27 +2,27 @@
 
 namespace MahdiAslami\Laravel\Lang\Console;
 
-class LibreTranslate
+use MahdiAslami\Laravel\Lang\Contracts\Translator;
+use Illuminate\Http\Client\Factory;
+
+class LibreTranslate implements Translator
 {
     const MAX_LENGTH = 2000;
 
-    private function __construct(
-        public readonly string $source = 'en',
-        public readonly string $target = 'fa',
-    ) {
-        //
+    public function __construct()
+    {
+        $this->http = new Factory();
     }
 
-    public static function translate(string $content, $source = 'en', $target = 'fa')
+    public function translate(string $text, string $source = 'en', string $target = 'fa'): string
     {
-        $instance = new LibreTranslate($source, $target);
-
-        return  $instance->request($content)->json()['translatedText'];
+        return  $this->request($text, $source, $target)
+            ->json()['translatedText'];
     }
 
-    private function request($content)
+    private function request($text, $source, $target)
     {
-        return Http::withHeaders([
+        return $this->http->withHeaders([
             'authority' => 'libretranslate.com',
             'accept' => '*/*',
             'accept-language' => 'en-US,en;q=0.9,fa;q=0.8,sk;q=0.7',
@@ -42,9 +42,9 @@ class LibreTranslate
             ->post(
                 'https://libretranslate.com/translate',
                 [
-                    'q' => $content,
-                    'source' => $this->source,
-                    'target' => $this->target,
+                    'q' => $text,
+                    'source' => $source,
+                    'target' => $target,
                     'format' => 'text',
                     'api_key' => ''
                 ]
