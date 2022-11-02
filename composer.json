@@ -21,13 +21,17 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Mahdiaslami\\Laravel\\Lang\\ServiceProvider"
+                "MahdiAslami\\Laravel\\Lang\\ServiceProvider"
             ]
         }
     },
     "minimum-stability": "dev",
+    "prefer-stable": true,
     "require-dev": {
-        "laravel/framework": "^9.21.0",
-        "guzzlehttp/guzzle": "7.5.x-dev"
+        "orchestra/testbench": "^7.11.0",
+        "guzzlehttp/guzzle": "^7.5"
+    },
+    "config": {
+        "sort-packages": true
     }
 }
