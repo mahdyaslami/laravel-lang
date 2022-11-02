@@ -9,7 +9,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Console\\": "console/"
+            "Console\\": "console/",
+            "Tests\\": "tests/"
         }
     },
     "authors": [
@@ -33,5 +34,10 @@
     },
     "config": {
         "sort-packages": true
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php ./vendor/bin/testbench package:discover --ansi"
+        ]
     }
 }
